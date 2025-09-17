@@ -3,6 +3,16 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+# Deny access to .env and other sensitive files
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+# (Optional) Deny access to other hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
     RewriteEngine On
 
     # Handle Authorization Header

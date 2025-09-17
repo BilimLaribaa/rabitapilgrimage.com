@@ -21,6 +21,7 @@ CACHE_DRIVER=file
 QUEUE_CONNECTION=sync
 
 
+
 # MAIL_MAILER=smtp
 # MAIL_HOST=smtp.mailtrap.io
 # MAIL_PORT=2525
