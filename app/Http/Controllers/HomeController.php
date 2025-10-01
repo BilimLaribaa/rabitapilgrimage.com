@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Blog;
+use Illuminate\Support\Facades\File;
+
 class HomeController extends Controller
 {
     /**
@@ -41,7 +43,21 @@ public function Home(Request $req)
     {
         return view('contact');
     }
+    public function team()
+    {
+        return view('team');
+    }
+   
+    public function gallery()
+    {
+        $files = File::files(public_path('masonry'));
 
+        $images = array_map(function ($file) {
+            return $file->getFilename();
+        }, $files);
+
+        return view('gallery', compact('images'));
+    }
 
     public function ContactCreates(Request $req)
     {

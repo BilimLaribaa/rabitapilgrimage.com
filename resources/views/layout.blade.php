@@ -112,12 +112,15 @@
                         <a href="{{ url('/') . getLanguageQuery() }}"><img src="{{ url('public/islamic/images/top-logo2.png') }}" width="70%" alt="img"></a>
                     </h1>
                 </div>
-                <div class="navigation" style="width:30%; margin-left:150px;">
+                <div class="navigation" style="width:50%; margin-left:100px;">
                     <ul class="d-flex list-unstyled mb-0">
                         <li class="me-3"><a href="{{ url('/') . getLanguageQuery() }}">Home</a></li>
                         <li class="me-3"><a href="{{ url('/about') . getLanguageQuery() }}">About Us</a></li>
                         <li class="me-3"><a href="{{ url('/services') . getLanguageQuery() }}">Services</a></li>
+                        <li><a href="{{ url('team') . getLanguageQuery() }}">Team</a></li>
+                        <li><a href="{{ url('gallery') . getLanguageQuery() }}">Gallery</a></li>
                         <li><a href="{{ url('contact') . getLanguageQuery() }}">Contact</a></li>
+
                     </ul>
                 </div>
                 <div class="donate_btn">

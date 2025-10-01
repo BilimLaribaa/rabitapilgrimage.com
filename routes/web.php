@@ -7,5 +7,7 @@ $router->get('/', function () use ($router) {
 $router->get('/', ["uses" => "HomeController@Home"]);
 $router->get('/about',["uses"=>"HomeController@about"]);
 $router->get('/services',["uses"=>"HomeController@services"]);
+$router->get('/team',["uses"=>"HomeController@team"]);
+$router->get('/gallery',["uses"=>"HomeController@gallery"]);
 $router->get('/contact',["uses"=>"HomeController@contact"]);
 $router->post('/ContactCreates',["uses"=>"HomeController@ContactCreates"]);
